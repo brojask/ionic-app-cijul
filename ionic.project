@@ -1,0 +1,11 @@
+{
+  "name": "appcijul",
+  "email": "",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/app",
+      "proxyUrl": "http://cijulenlinea.ucr.ac.cr/app/"
+    }
+  ]
+}

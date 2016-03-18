@@ -1,0 +1,35 @@
+<ion-modal-view>
+  <ion-content class="padding bg-blue">
+    <div style="text-align:center;">
+        <div class="spacer" style="width: 320px; height: 100px;"></div>
+        <img src="img/logo-3.png">
+        <p>Centro de Información Jurídica en Línea</p>
+    </div>
+    <form name="loginform" ng-submit="doLogin()" class="welcome-form">
+        <div class="list">
+            <label class="item item-input" style="margin-bottom:6px;">
+                <span class="input-label">Carné</span>
+                <input type="text" placeholder="" ng-model="registroData.carne" required>
+            </label>
+            <label class="item item-input" style="margin-bottom:6px;">
+                <span class="input-label">Cédula</span>
+                <input type="text" placeholder="Ej. 101110111" ng-model="registroData.cedula" required>
+            </label>
+            <label class="item item-input" style="margin-bottom:6px;">
+                <span class="input-label">Email</span>
+                <input type="email" placeholder="Ej. info@dominio.com" ng-model="registroData.email" required>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Teléfono</span>
+                <input type="text" placeholder="Ej. 2511-1536" ng-model="registroData.telefono" required>
+            </label>
+        </div>
+        <div>
+            <button class="button button-block button-custom icon-right ion-chevron-right" ng-disabled="loginform.$invalid">Registrarse</button>
+        </div>
+    </form>
+    <p class="text-center">
+      <a href="#/" class="button button-clear button-light icon-left ion-ios-arrow-left">Login</a>
+    </p>
+  </ion-content>
+</ion-modal-view>

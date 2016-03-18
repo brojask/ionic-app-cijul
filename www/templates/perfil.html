@@ -1,0 +1,20 @@
+<ion-view title="Perfil">
+    <ion-content>
+        <div class="list list-inset">
+            <form ng-submit="updateProfile(profileData)">
+        		<label class="item item-input">
+                    <i class="icon ion-android-mail placeholder-icon"></i>
+                    <input type="text" ng-model="profileData.correo" placeholder="Email" value="{{usuario.usuario}}"/>
+                </label>
+                <label class="item item-input">
+                    <i class="icon ion-android-call placeholder-icon"></i>
+                    <input type="text" ng-model="profileData.telefono" placeholder="Teléfono" value="{{usuario.telefono}}"/>
+                </label>
+                
+                <button type="submit" class="button button-block button-positive icon-right ion-android-send" ng-disabled="profileData.$invalid">
+                    Actualizar
+                </button>
+            </form>
+        </div>
+    </ion-content>
+</ion-view>

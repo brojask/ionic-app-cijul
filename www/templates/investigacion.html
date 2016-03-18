@@ -1,0 +1,45 @@
+<ion-view>
+    <ion-content>
+        <ion-list>
+            
+                <div class="item item-avatar">
+                    <!-- <img src="http://ionicframework.com/img/docs/mcfly.jpg"/> -->
+                    <img src="img/logo-lg.png"/>
+                    <h2>
+                        {{investigacion.usuario}}
+                    </h2>
+                    <p>
+                        {{investigacion.fecha}}
+                    </p>
+                </div>
+                <div class="item item-body" >
+                    <!-- <img class="full-image" src="http://ionicframework.com/img/docs/delorean.jpg"/> -->
+                    <h2>{{ investigacion.codigo_investigacion}}-{{ investigacion.titulo}}</h2>
+                    <p ng-show="investigacion.resumen.length" style="text-align:justify;">
+                        {{investigacion.resumen }}
+                    </p>
+                </div>
+                <div class="item tabs tabs-secondary tabs-icon-top">
+		        	<a class="tab-item" href="#" ng-click="comentar(investigacion.codigo_investigacion)">
+		        		<i class="icon ion-archive"></i>
+		        		Descargar
+	        		</a>
+		        	<a class="tab-item" href="#">
+		        		<i class="icon ion-paper-airplane"></i>
+		        		Enviar Archivo
+	        		</a>		        	
+	    		</div>
+	    		<div class="item tabs tabs-secondary tabs-icon-top">
+		        	<a class="tab-item" href="#" ng-click="comentar(investigacion.codigo_investigacion)">
+		        		<i class="icon ion-star"></i>
+		        		Favoritos
+	        		</a>
+		        	<a class="tab-item" href="#">
+		        		<i class="icon ion-share"></i>
+		        		Compartir
+	        		</a>		        	
+	    		</div>
+            
+        </ion-list>
+    </ion-content>
+</ion-view>

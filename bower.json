@@ -1,0 +1,12 @@
+{
+  "name": "HelloIonic",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.2.4"
+  },
+  "dependencies": {
+    "satellizer": "^0.14.0",
+    "angular-permission": "^2.1.0",
+    "angular-jwt": "^0.0.9"
+  }
+}

@@ -1,0 +1,101 @@
+/* Empty. Add your own CSS if you like */
+
+.bar.bar-cijul {
+	background-color: #0088cc;
+}
+.bar.bar-cijul .title {
+	color: #fff;
+}
+.bar.bar-cijul .button.button-clear{
+	color: #fff;	
+}
+/*.button-clear.button-clear {
+	color: #fff;	
+}*/
+/*.item h2 {
+	word-wrap: normal;
+	white-space: normal;
+}*/
+.button.button-custom {
+	color: #fff;
+	background-color: #00476a;	
+	border-color: #00476a;
+}
+.button.button-custom.disabled, .button.button-custom[disabled] {
+	opacity: 0.7;
+}
+
+.bg-blue {
+  	background-color: #2F2727;
+  	/*background-image: url(images/radial_bg.png);*/
+	background-position: center center;
+  	background-repeat: no-repeat;
+  	background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));
+  	background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+  	background: -moz-radial-gradient(circle, #1a82f7, #2F2727);
+  	background: -ms-radial-gradient(circle, #1a82f7, #2F2727);
+	color: #fff;
+}
+.custom-card.item {
+	padding: 0;
+}
+.custom-card .item-header {
+	background-color: #001f2f;
+	padding: 16px;
+}
+
+.custom-card .item h2 {
+	color: #fff;
+	/*word-wrap: normal;
+	white-space: normal;*/
+}
+.bar.custom-bar-header {
+	background-color: #0088cc;
+	border: none;
+}
+
+/**
+accordion
+**/
+.list .item.item-accordion {
+  /*line-height: 38px;
+  padding-bottom: 0;  */
+  padding-top: 0;  
+  transition: 0.09s all linear;
+  text-align: justify;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+.bar .button.button-fab, .button.button-fab {
+	-moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+    z-index: 9999;
+    width: 56px;
+    height: 56px;
+    max-height: initial;
+    max-width: initial;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-transition: .3s fade-in-out;
+    transition: .3s fade-in-out;
+    -webkit-transition-property: -webkit-transform,box-shadow;
+    transition-property: transform,box-shadow;
+}
+
+.bar .button.button-fab.button-fab-bottom-right, .button.button-fab.button-fab-bottom-right {
+	top: auto;
+    right: 16px;
+    bottom: 16px;
+    left: auto;
+    position: absolute;
+}

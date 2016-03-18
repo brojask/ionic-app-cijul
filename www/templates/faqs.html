@@ -1,0 +1,29 @@
+<ion-view title="FAQ's">
+    <ion-content>
+        <ion-list>
+
+            <ion-item class="item-text-wrap" ng-click="toggleGroup(1)" ng-class="{active: isGroupShown(1)}">
+                <i class="icon" ng-class="isGroupShown(1) ? 'ion-minus' : 'ion-plus'">
+                </i>                
+                 ¿Qué es CIJUL en Línea?
+            </ion-item>
+            <div class="item item-body item-accordion" ng-show="isGroupShown(1)">
+    			<p>
+    				Es el Centro de Investigación Jurídica en Línea que surge como parte de un convenio entre el Colegio de abogados y Abogadas de Costa Rica y la Universidad de Costa Rica, para brindar un servicio especializado a los agremiados de este Colegio profesional y la difusión de las ciencias jurídicas.
+    			</p>
+  			</div>
+
+            <ion-item class="item-text-wrap" ng-click="toggleGroup(2)" ng-class="{active: isGroupShown(2)}">
+                <i class="icon" ng-class="isGroupShown(2) ? 'ion-minus' : 'ion-plus'">
+                </i>            
+                ¿Cuáles son los servicios que se prestan en CIJUL en Línea?
+            </ion-item>            
+            <div class="item item-body item-accordion" ng-show="isGroupShown(2)">
+    			<p>
+    				El usuario puede tener acceso a casi 4000 investigaciones especializadas en el área jurídica, puede ingresar consultas específicas y además puede solicitar préstamos a sala, del gran acervo bibliográfico con que cuenta la Biblioteca de la Facultad de Derecho de la Universidad de Costa Rica.
+    			</p>
+  			</div>
+
+        </ion-list>
+    </ion-content>
+</ion-view>

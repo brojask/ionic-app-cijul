@@ -1,0 +1,23 @@
+<ion-view title="Consultas">	
+	<ion-content>		
+	    <button id="fab" class="button button-positive button-fab    button-fab-bottom-right" style="display: block;">
+            <i class="icon ion-social-twitter"></i>
+        </button>
+	<ion-refresher pulling-text="Actualizar..." on-refresh="doRefresh()"></ion-refresher>
+	</ion-list>		
+		<ion-list>						
+			<div class="item item-text-wrap item-button-right" ng-repeat="consulta in consultas">		    
+			<h2>{{consulta.codigo_consulta}} - {{consulta.descripcion}}</h2>
+			<p>{{consulta.fecha}}</p>
+			<!-- <p>{{consulta}}</p> -->
+		    <!-- <h2>{{inv.codigo_investigacion}} - {{inv.titulo}}</h2>
+		    <p>{{inv.fecha}}</p>
+		    <a class="button button-clear button-light" href="#/app/investigacion/{{inv.codigo_investigacion}}">
+		      <i class="icon ion-information-circled"></i>
+		    </a> -->		
+		  </div>				
+
+		<ion-infinite-scroll on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+
+	</ion-content>
+</ion-view>
